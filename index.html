@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крокодил - Игра для компании</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎭 Крокодил</h1>
+            <p class="subtitle">Покажи, объясни, нарисуй!</p>
+        </header>
+
+        <main>
+            <div class="game-screen" id="gameScreen">
+                <div class="difficulty-selector">
+                    <h2>Выбери сложность:</h2>
+                    <div class="difficulty-buttons">
+                        <button class="difficulty-btn easy" data-level="easy">Легко</button>
+                        <button class="difficulty-btn medium" data-level="medium">Средне</button>
+                        <button class="difficulty-btn hard" data-level="hard">Сложно</button>
+                    </div>
+                </div>
+
+                <div class="word-display hidden" id="wordDisplay">
+                    <div class="word-container">
+                        <span class="word" id="word"></span>
+                        <span class="difficulty-badge" id="difficultyBadge"></span>
+                    </div>
+                    <button class="next-btn" id="nextBtn">Угадано! ➡️</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Игра для веселой компании</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
