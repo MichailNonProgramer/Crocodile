@@ -152,33 +152,8 @@ const wordsData = {
         "ИИ-соблазнитель", "Секс-робот", "Киберпротез удовольствия", "Нейроимплант экстаза", "Виртуальный оргазм",
         "Галлюциногенный трип", "Киберсекс", "Нейростимуляция", "Биомеханическое наслаждение", "Искусственная вагина",
         "Анальный датчик", "Тактильный экзоскелет", "Электростимуляция", "Виртуальный бордель", "Нейросеть удовольствия",
-        "Клонирование органов", "Генетический оргазм", "Крио-секс"]};
+        "Клонирование органов", "Генетический оргазм", "Крио-секс"]}
       
-
-// DOM элементы
-const difficultyButtons = document.querySelectorAll('.difficulty-btn');
-const wordDisplay = document.getElementById('wordDisplay');
-const wordElement = document.getElementById('word');
-const difficultyBadge = document.getElementById('difficultyBadge');
-const nextBtn = document.getElementById('nextBtn');
-const gameScreen = document.getElementById('gameScreen');
-
-// Текущий уровень сложности
-let currentDifficulty = null;
-
-// Обработчики для кнопок сложности
-difficultyButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        currentDifficulty = button.dataset.level;
-        showWord(currentDifficulty);
-    });
-});
-
-// Обработчик для кнопки "Угадано"
-nextBtn.addEventListener('click', () => {
-    document.querySelector('.difficulty-selector').classList.remove('hidden');
-    wordDisplay.classList.add('hidden');
-    wordDisplay.style.display = 'none';
 // DOM элементы
 const difficultyButtons = document.querySelectorAll('.difficulty-btn');
 const wordDisplay = document.getElementById('wordDisplay');
