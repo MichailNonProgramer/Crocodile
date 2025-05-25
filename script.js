@@ -174,6 +174,13 @@ difficultyButtons.forEach(button => {
 
 });
 
+// Обработчик для кнопки "Угадано"
+nextBtn.addEventListener('click', () => {
+    document.querySelector('.difficulty-selector').classList.remove('hidden');
+    wordDisplay.classList.add('hidden');
+    wordDisplay.style.display = 'none';
+});
+
 // Показать случайное слово
 function showWord(difficulty) {
     const words = wordsData[difficulty];
