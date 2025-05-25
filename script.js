@@ -171,7 +171,6 @@ difficultyButtons.forEach(button => {
         currentDifficulty = button.dataset.level;
         showWord(currentDifficulty);
     });
-
 });
 
 // Обработчик для кнопки "Угадано"
